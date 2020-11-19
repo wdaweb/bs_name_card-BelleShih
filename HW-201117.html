@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+
+    <title></title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Microsoft JhengHei", sans-serif;
+        box-sizing: border-box;
+        transition: 1s;
+      }
+      .black {
+        background: black;
+      }
+
+      @media (max-width: 575px) {
+        .height {
+          height: 30%;
+          flex-direction: column;
+        }
+        .height2 {
+          height: 70%;
+          flex-direction: column;
+        }
+
+        img{
+          height: 60%;
+        }
+      }
+      @media (min-width: 992px) {
+        .height {
+          height: 50%;
+        }
+
+        .height2 {
+          height: 50%;
+          box-shadow: 0px 0px 15px rgb(218, 218, 218);
+        }
+
+        .triangle {
+          filter: drop-shadow(-5px 0px 2px rgba(0, 0, 0, 0.1));
+          top: -100px;
+          left: 500px;
+        }
+        .triangle2 {
+          transform: rotate(180deg);
+          filter: drop-shadow(-5px 0px 2px rgba(0, 0, 0, 0.1));
+          top: 250px;
+          left: -500px;
+        }
+
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center align-items-center vh-100 w-100">
+      <div class="row align-items-center justify-content-center h-100 w-100">
+        <div class="col col-xl-4 d-flex justify-content-center align-items-center height black">
+        <img src="./logo_black.png" class="">
+        </div>
+        <div class="col col-xl-8 d-flex flex-column align-items-center height2">
+          <div class="h-100 d-flex flex-column justify-content-center">
+            <h4>Font-end Designer</h4>
+            <h1 class="display-2">Belle Shih</h1>
+            <h2 class="mb-5">泰 山 職 訓 局</h2>
+            <p>
+              住址：24302新北市泰山區貴子里致遠新村55之1號<br>
+              電話：02-2901-8274<br>
+              E-mail：belleshih0502@gmail.com<br>
+              網站：http://www.belleshih.example.cc/
+            </p>
+          </div>
+          <div>
+            <img src="./triangle01.png" alt="" class="position-absolute triangle d-none d-lg-block">
+            <img src="./triangle01.png" alt="" class="position-absolute triangle2 d-none d-lg-block">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+  </body>
+</html>
